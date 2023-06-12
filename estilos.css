@@ -1,0 +1,145 @@
+/*Registro de Usuario*/
+.cuerpoRegistro {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+    animation: gradiante 15s ease infinite;
+}
+
+.contenedorFormulario {
+    display: block;
+    margin: auto;
+    width: 800px;
+}
+
+#formularioRegistro {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    text-align: center;
+    border: 1px ridge #181818;
+    border-radius: 10px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+    font-family: "Segoe UI";
+}
+
+#formularioRegistro label:not(#errorContra) {
+    display: block;
+    margin: 20px auto auto;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px #FFFFFF;
+}
+
+#formularioRegistro input[type="text"], #formularioRegistro input[type="email"], #formularioRegistro input[type="password"] {
+    background-image: url("###");
+    background-size: 18px;
+    background-position: 295px;
+    background-repeat: no-repeat;
+}
+
+#errorContra {
+    display: none;
+    margin: auto;
+    margin: 20px auto auto;
+    font-size: 20px;
+}
+
+#formularioRegistro h1 {
+    display: block;
+    margin: 10px auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistro input {
+    display: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 315px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistro button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: transform 1s;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistro button:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+#formularioRegistro button:active {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+/**/
+
+/*Cruds*/
+.cuerpoCrud {
+    margin: 0;
+    font-family: "Segoe UI";
+}
+
+.navCrud {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+}
+
+.navCrud div {
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+}
+
+/**/
+
+/*Keyframes e imports varios*/
+@keyframes gradiante {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/**/

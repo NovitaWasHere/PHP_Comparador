@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Kanit:wght@100&display=swap');
+
+
+/*Página elegir alimento*/
+main {
+
+    height: auto;
+
+}
+
+.gridElementos {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10%;
+    width: 100%;
+}
+
+.comida1 {
+    display: block;
+    padding: 10px;
+    width: 450px;
+    max-width: 450px;
+    border: 5px ridge #abbaab;
+    background-color: white;
+}
+
+.divBotonComparar {
+
+    display: block;
+    width: 200px;
+    margin: auto auto 50px;
+
+}
+
+.divBotonComparar a {
+    text-decoration: none;
+}
+
+#botonComparar {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: transparent;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    transition: 1s;
+}
+
+#botonComparar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #C6FFDD;
+    animation: gradiante 10s ease infinite;
+    transition: 1s;
+}
+
+.comida1 img {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.statsComida1 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 2fr auto 2fr 2fr auto 2fr;
+    width: 450px;
+    text-align: center;
+}
+
+.statsComida1 div {
+    border: 2px ridge #abbaab;
+    padding: 5px;
+}
+
+.tituloComida {
+    display: block;
+    width: 300px;
+    margin: 15px auto 15px;
+    text-align: center;
+    border: 5px ridge #abbaab;
+}
+
+.formTipo {
+    display: block;
+    margin: 60px auto auto;
+    width: 450px;
+}
+
+.formTipo select {
+    display: block;
+    margin: auto;
+    border: 2px solid #abbaab;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#elegirTipo1 {
+    float: left;
+}
+
+#elegirTipo2 {
+    float: right;
+}
+
+#botonTipo {
+    display: block;
+    margin: 10px auto auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 70px;
+    border-radius: 10px;
+    border: transparent;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    transition: 1s;
+}
+
+#botonTipo:hover {
+    transform: scale(1.1);
+    animation: gradiante 10s ease infinite;
+    transition: 1s;
+}
+
+.formAlimento1 {
+
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.formAlimento1 select {
+    display: block;
+    margin: auto;
+    border: 2px solid #abbaab;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/**/
+
+body {
+
+    background-image: url(https://img.freepik.com/foto-gratis/textura-tablas-madera_1249-169.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body1 {
+
+    margin: 0;
+
+}
+
+footer * {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+header h1 {
+
+    color: #96ceb4;
+    font-size: 70px;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.Bienvenida h2 {
+
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: 'DynaPuff', cursive;
+
+
+}
+
+.texto_info h3, .Bienvenida h3 {
+
+    color: rgb(255, 255, 255);
+    font-family: 'DynaPuff', cursive;
+    font-size: 40px;
+
+}
+
+header h5 {
+
+    color: #588c7e;
+
+}
+
+header h6 {
+
+    font-size: 15px;
+
+}
+
+.barra_botonesS li {
+
+    background-color: #f2e394;
+    width: auto;
+    height: 70px;
+    list-style: none;
+
+}
+
+li:hover {
+
+    background-color: #fdd57e;
+
+}
+
+.barra_botonesS a {
+
+    color: #588c7e;
+    text-decoration: none;
+
+}
+
+header {
+
+    display: inline-block;
+    background-image: radial-gradient(circle at 10% 10%, rgba(225, 111, 105, 1), #ffdc90);
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+
+}
+
+header h1 {
+    text-align: center;
+}
+
+.barra_botonesS {
+
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    grid-template-columns: auto auto;
+    background-color: #ffcc5c;
+
+}
+
+.barra_botonesS div {
+
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    border-radius: 15px;
+
+}
+
+section button {
+
+    width: 250px;
+    height: 100px;
+    background-color: #f2ae72;
+    border-radius: 45px;
+    border: 1px solid white;
+
+
+}
+
+.prod {
+
+    cursor: pointer;
+
+}
+
+.prod:hover {
+
+    background-color: #f2ae72;
+
+}
+
+.boton_iniciar_sesion:hover {
+
+    background-color: #96ceb4;
+
+}
+
+.demas:hover {
+
+    background-color: #f2e394;
+
+}
+
+.portada_inicio_imagen {
+
+    margin-top: 5%;
+    width: auto;
+
+}
+
+.portada_inicio_imagen img {
+
+    box-shadow: 1px 20px 20px 20px #000000;
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    display: block;
+    filter: brightness(60%);
+    opacity: 80%;
+
+}
+
+.Bienvenida {
+
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    height: auto;
+    bottom: 500px;
+    left: 200px;
+
+}
+
+.boton_comparar {
+
+    z-index: 1;
+    height: 150px;
+    position: relative;
+    left: 65%;
+    bottom: 800px;
+
+}
+
+.boton_comparar h2 {
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
+}
+
+.boton_comparar:hover {
+
+    transition: 2s;
+    background-color: #f8ebab;
+
+}
+
+.Estadisticas {
+
+    display: block;
+    width: auto;
+    margin: auto auto 100px;
+
+}
+
+.Estadisticas h1 {
+
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+
+}
+
+.Canvas1 {
+
+    width: auto;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 25px;
+    column-gap: 100px;
+
+}
+
+.Canvas2 {
+
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    gap: 10px;
+
+}
+
+.titGraf {
+
+    width: auto;
+
+}
+
+canvas {
+    width: 250px;
+
+}
+
+.section1 {
+
+    height: 750px;
+
+}
+
+.section2 {
+
+    margin-left: 10%;
+    width: 80%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    visibility: hidden;
+
+}
+
+.info {
+
+    width: auto;
+
+}
+
+.texto_info {
+
+
+    margin-top: 10%;
+
+}
+
+.texto_info h3 {
+
+    font-size: 40px;
+    color: #ff6f69;
+
+}
+
+.texto_info p {
+
+    font-size: 30px;
+    color: white;
+
+}
+
+.links_abajo {
+
+    background-image: radial-gradient(circle at 20% 50%, rgba(253, 213, 126, 1), #96ceb4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.links_abajo a {
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+.links_abajo li:hover {
+
+    color: rgba(0, 0, 0, 0.1);
+
+}
+
+.links_abajo h4 {
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.links_abajo h5 {
+
+    color: white;
+    font-size: 20px;
+
+}
+
+.links_abajo li {
+
+    list-style: none;
+
+}
+
+.links_comidas {
+
+    width: auto;
+
+
+}
+
+.Redes {
+
+    width: auto;
+    height: 60px;
+    background-image: radial-gradient(circle at 30% 50%, rgba(253, 213, 126, 1), #7ecea8);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.Redes h4 {
+
+    color: white;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.copyrigth {
+
+    background-color: rgb(87, 81, 81);
+    height: 90px;
+
+}
+
+.copyrigth h4 {
+
+    color: white;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.copyrigth h5 {
+
+    color: white;
+    text-align: center;
+
+}
+
+.textcopy {
+
+    position: relative;
+    top: 30px;
+
+}
+
+.networks {
+
+    position: relative;
+    top: 20px;
+
+}
+
+.admins {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    left: 85%;
+    bottom: 220px;
+    transition: 1s;
+
+}
+
+.admins:hover {
+
+    background-color: white;
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.admins img {
+
+    width: 100px;
+
+}
+
+/* CSS SUBMENU*/
+.barra_botonesS .invisible {
+
+    display: none;
+    background-image: radial-gradient(circle at 50% 50%, rgba(225, 111, 105, 1), #ffdc90);
+    position: relative;
+    z-index: 2;
+    bottom: 10%;
+    width: 100%;
+    height: 450px;
+
+}
+
+.barra_botonesS .submenu {
+
+    background-image: radial-gradient(circle at 50% 50%, rgba(225, 111, 105, 1), #ffdc90);
+    display: grid;
+    grid-template-columns: 1fr;
+    visibility: hidden;
+    gap: 30px;
+    position: absolute;
+    z-index: 2;
+    left: 57%;
+    width: 10%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+#myChart6 {
+
+    width: 500px;
+
+}
+
+#myChart7 {
+
+    width: 500px;
+
+}
+
+.TitCan {
+
+    margin: 150px auto auto;
+
+}
+
+
+/* CSS PARA EL GRAFICO */
+.Block-animation {
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(50px);
+    animation-name: miAnimacion;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes miAnimacion {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CSS DEL ICONO*/
+
+.custom-icon {
+
+    color: rgb(255, 255, 255);
+    width: 130px;
+    position: relative;
+    top: 20px;
+
+}
+
+@media screen and (max-width: 1040px) {
+
+    .header {
+
+        width: fit-content;
+
+    }
+
+    .boton_comparar {
+
+        left: 35%;
+        bottom: 400px;
+
+    }
+
+    .barra_botonesS .submenu {
+
+        top: 50%;
+
+    }
+
+    h2 {
+
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 20px;;
+
+    }
+
+    .Bienvenida {
+
+        display: block;
+        margin: auto;
+        bottom: 600px;
+        left: 0;
+
+    }
+
+    #myChart {
+
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .info {
+
+        width: 350px;
+        position: relative;
+        right: 50%;
+
+    }
+}
+
+@media screen and (max-width: 1920px) {
+
+    .barra_botonesS .submenu {
+
+        top: 35%;
+
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    .barra_botonesS .submenu {
+
+        top: 45%;
+
+    }
+
+}
+
+@keyframes gradiante {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

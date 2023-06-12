@@ -1,0 +1,617 @@
+/*Registro y Login Usuario*/
+.contenedorFormulario {
+    margin-top: 60px;
+}
+
+#formularioRegistro {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    border: 1px ridge #181818;
+    border-radius: 10px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+    font-family: "Segoe UI";
+}
+
+#formularioRegistro label:not(#errorContra) {
+    display: block;
+    margin: 20px auto auto;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px #FFFFFF;
+}
+
+#formularioRegistro input[type="text"], #formularioRegistro input[type="email"], #formularioRegistro input[type="password"] {
+    background-image: url("###");
+    background-size: 18px;
+    background-position: 285px;
+    background-repeat: no-repeat;
+}
+
+#formularioRegistro input[type="number"] {
+
+    display: block;
+    border: 2px solid #abbaab;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistro select {
+
+    display: block;
+    border: 2px solid #abbaab;
+    margin: 10px auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+#formularioRegistroE {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    border: 1px ridge #181818;
+    border-radius: 10px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+    font-family: "Segoe UI";
+}
+
+#formularioRegistroE label:not(#errorContra) {
+    display: block;
+    margin: 20px auto auto;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px #FFFFFF;
+}
+
+#formularioRegistroE input[type="text"], #formularioRegistroE input[type="email"], #formularioRegistroE input[type="password"] {
+    background-image: url("###");
+    background-size: 18px;
+    background-position: 285px;
+    background-repeat: no-repeat;
+}
+
+#formularioRegistroE input[type="number"] {
+
+    display: block;
+    border: 2px solid #abbaab;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistroE select {
+
+    display: block;
+    border: 2px solid #abbaab;
+    margin: 10px auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+#errorContra {
+    display: none;
+    margin: auto;
+    margin: 20px auto auto;
+    font-size: 20px;
+}
+
+#formularioRegistro h1 {
+    display: block;
+    margin: 10px auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistro input:not(input[type="number"]) {
+    display: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 315px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistro button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: transform 1s;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistro button:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+#formularioRegistro button:active {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+#formularioRegistro select {
+    isplay: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 80px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistroE h1 {
+    display: block;
+    margin: 10px auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistroE input:not(input[type="number"]) {
+    display: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 315px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistroE button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: transform 1s;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistroE button:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+#formularioRegistroE button:active {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+#formularioRegistroE select {
+    isplay: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 80px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Formulario Registro Alimentos*/
+#rej {
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+#formularioRegistroA {
+
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    width: 70%;
+    text-align: center;
+    border: 1px ridge #181818;
+    border-radius: 10px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+    font-family: "Segoe UI";
+}
+
+
+#formularioRegistroA label:not(#errorContra) {
+    display: block;
+    margin: 20px auto auto;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px #FFFFFF;
+}
+
+#formularioRegistroA input[type="text"], #formularioRegistro input[type="email"], #formularioRegistro input[type="password"] {
+    background-image: url("###");
+    background-size: 18px;
+    background-position: 285px;
+    background-repeat: no-repeat;
+}
+
+#formularioRegistroA input[type="number"] {
+
+    display: block;
+    border: 2px solid #abbaab;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#seleE {
+
+    position: relative;
+    bottom: 200px;
+    width: 30%;
+    margin: auto;
+
+}
+
+#hua {
+
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+
+}
+
+#formularioRegistroA input:not(input[type="number"]) {
+    display: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 315px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#formularioRegistroA button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: transform 1s;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+#formularioRegistroA button:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+#formularioRegistroA button:active {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+#formularioRegistroA select {
+    display: block;
+    border: 1.5px solid #abbaab;
+    margin: 10px auto;
+    width: 80px;
+    height: 27px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Crud Usuarios*/
+.cuerpoCrud {
+    margin: 0 0 500px;
+    font-family: "Segoe UI";
+}
+
+.headerCrud {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+}
+
+.headerCrud a {
+    text-decoration: none;
+}
+
+.headerCrud h1 {
+    display: block;
+    margin: 0 auto;
+    color: #121212;
+    padding: 5px;
+    width: 50%;
+    border: 5px ridge #abbaab;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+.navCrud {
+    display: block;
+    margin-bottom: 20px;
+    background: #C6FFDD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6f69, #ffcc5c, #96ceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    animation: gradiante 10s ease infinite;
+}
+
+.gridNav {
+    display: grid;
+    margin: auto;
+    width: 680px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+}
+
+.gridNav div {
+    display: block;
+    padding: 10px;
+    margin: auto auto 10px;
+    border: 5px ridge #abbaab;
+    width: 170px;
+    text-align: center;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    transition: transform 1s;
+}
+
+.gridNav a {
+    color: #121212;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gridNav div:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.gridNavA {
+    display: grid;
+    margin: auto;
+    width: 550px;
+    grid-template-columns: auto auto;
+    padding: 5px;
+}
+
+.gridNavA div {
+    display: block;
+    padding: 10px;
+    margin: auto auto 10px;
+    border: 5px ridge #abbaab;
+    width: 150px;
+    text-align: center;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+    transition: transform 1s;
+}
+
+.gridNavA a {
+    color: #121212;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gridNavA div:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.gridPaginacion {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: auto auto 15px;
+    width: 200px;
+}
+
+.gridPaginacion div {
+    transition: transform 0.5s;
+}
+
+.gridPaginacion img {
+    width: 30px;
+}
+
+.gridPaginacion div:hover:not(.limite) {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.gridPaginacion #flechaIzq {
+    transform: rotate(180deg);
+}
+
+.mainCrud {
+    display: block;
+    height: 80%;
+}
+
+.mainCrud .eligeFuncion {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gridUsuarios {
+    display: grid;
+    grid-template-columns: auto 2fr auto 2fr auto auto auto;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+}
+
+
+.gridUsuarios div {
+    border: 2px ridge #abbaab;
+    padding: 10px;
+}
+
+.gridUsuarios .tituloGrid {
+    font-weight: bold;
+}
+
+.gridUsuarios a {
+    text-decoration: none;
+    color: #121212;
+    padding: 5px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gridAlimentos {
+
+    display: grid;
+    grid-template-columns: auto 3fr auto auto auto auto auto auto 3fr auto auto;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 300% 300%;
+
+}
+
+
+.gridAlimentos div {
+    border: 2px ridge #abbaab;
+    padding: 10px;
+}
+
+.gridAlimentos .tituloGrid {
+    font-weight: bold;
+}
+
+.gridAlimentos a {
+    text-decoration: none;
+    color: #121212;
+    padding: 5px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botonEditar {
+    background-color: #55ACEE;
+    transition: filter 1s, box-shadow 1s;
+}
+
+.botonEditar:hover {
+    filter: saturate(180%);
+    box-shadow: 0 0 10px #55ACEE;
+    transition: filter 1s, box-shadow 1s;
+}
+
+.botonEliminar {
+    background-color: #EA4335;
+    transition: filter 1s, box-shadow 1s;
+}
+
+.botonEliminar:hover {
+    filter: saturate(180%);
+    box-shadow: 0 0 10px #EA4335;
+    transition: filter 1s, box-shadow 1s;
+}
+
+.tipo {
+    font-size: 20px;
+}
+
+@keyframes gradiante {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
